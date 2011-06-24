@@ -1,102 +1,49 @@
-=== Plugin Name ===
+=== Show/Hide Content at Set Time ===
 Contributors: thewanderingbrit
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=G83BH4VJRKMBJ
-Tags: upcoming, posts, future, scheduled, widget, sidebar, list, number, title, interest, readers, newsletter, rss feed, feedburner, drafts, soup
-Requires at least: 2.9
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DB5AQD4WA8NK6
+Tags: time, date, show hide, expire, active, activate, competition, advert, advertising, content, post, text
+Requires at least: 2.5
 Tested up to: 3.1.3
-Stable tag: 1.4
+Stable tag: 1.0
 
-Displays your upcoming posts in a sidebar widget to tease your readers
+Creates shortcodes which you can wrap around text, which specify at what date or time that content should appear or disappear. Great for competitions
 
 == Description ==
 
-SOUP creates a widget in your sidebar which allows you to display your upcoming posts (scheduled, drafts, or both) to your readers. The idea is to entice your readers to come back and read the article once it gets published, or better yet, subscribe to your RSS feed and/or newsletter.
+This plugin allows you to wrap certain parts of your post content in a shortcode and enter a date or time when that content should either appear, or disappear.
 
-There's just a few options in this widget at present:
+For example, if you have a competition that ends on 12/31/2012, you can use:
+`[expires off="2012-12-31"]Please enter our competition[/expires]
+[showafter on="2012-12-31"]Sorry, this competition has closed[/closed]`
 
-* Title of sidebar widget
-* Number of upcoming posts to display (always in ascending order - newest first)
-* Choose whether to show scheduled posts, drafts, or both.
-* Display order of the posts (next post first or random order)
-* Show/hide newsletter link
-* Include link to sign up to newsletter
+You can use any date or time string [supported by PHP](http://www.php.net/manual/en/datetime.formats.php "PHP Date and Time strings"), such as:
+`[expires off="10 September 2012"]Will expire on 09/10/2012[/expires]
+[expires off="2012-09-10"]Will expire on 09/10/2012[/expires]
+[expires off="Septmber 10th, 2012"]Will expire on 09/10/2012[/expires]
+[showafter on="2012.09.10 18:00:00"]Will show after 09/10/2012 at 6pm[/showafter]`
 
-I've got plans to continue developing and updating this plugin. If you have any suggestions on revisions that you'd like to see made, please [get in touch](http://www.theukedge.com/contact/ "Contact Dave at The UK Edge") or [find me on Twitter](http://www.twitter.com/daclements "Dave on Twitter").
+Thanks to [Alex King](http://alexking.org "Alex King") and [Crowd Favorite](http://www.crowdfavorite.com "Crowd Favorite") for their original code in the [Expiring Content Shortcode](http://wordpress.org/extend/plugins/expiring-content-shortcode/ "Expiring Content Shortcode").
 
-I also run [Do It With WordPress](http://www.doitwithwp.com "WordPress Tutorials"), which has an array of tutorials for managing, modifying and maintaining your WordPress sites.
+Check out [Do It With WordPress](http://www.doitwithwp.com "WordPress Tutorials") for more plugins and tutorials.
 
 == Installation ==
 
-1. Upload `soup-show-off-upcoming-posts` folder to the `/wp-content/plugins/` directory
+1. Upload `shortcodes-to-show-or-hide-content.zip` to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Go to Appearance > Widgets to put the widget in your selected sidebar.
-1. Set your settings, hit Save and go to your site to see it in action.
+1. Use shortcodes around your text
 
 == Frequently Asked Questions ==
 
-= Are there more options planned in future? =
+= I need some help =
 
-Absolutely. I'll be providing more options and upgrades in the near future. You can stay up to date by following me on [Twitter](http://www.twitter.com/daclements "Dave on Twitter").
-
-= I don't have a newsletter. Is this functionality lost on me? =
-
-Many WordPress users send their RSS feed through FeedBurner, which has the option to deliver your latest posts by email to anyone who subscribes. Just log in to FeedBurner, go to the Publicize tab and select Email Subscriptions where you'll be able to grab the link.
-
-= I'm having issues. What do I do? =
-
-Get in touch with me and I'll do my best to help. [Contact me](http://www.theukedge.com/contact/ "Contact Dave at The UK Edge").
-
-== Screenshots ==
-
-1. An example of the widget in use.
-2. The widget control panel.
+Please [contact me](http://www.theukedge.com/contact/ "Contact The UK Edge") if you have any problems with this plugin.
 
 == Changelog ==
 
-= 1.4 =
-* Added option to change display order of posts (random, or next post first)
-
-= 1.3.3 =
-* Fixed bad image link for RSS icon.
-
-= 1.3.2 =
-* Added option to give plugin author credit
-
-= 1.3.1 =
-* Minor updates
-
-= 1.3 =
-* Included option to display either drafts, scheduled posts, or both.
-
-= 1.2 =
-* Included option to display URL to newsletter signup.
-* Revised and tidied up code
-
-= 1.1 =
-* Made changes to include cross-compatibility for different sites.
-
 = 1.0 =
-* Initial version.
+* Stable public release
 
 == Upgrade Notice ==
 
-= 1.4 =
-* Added option to change display order of posts (random or next post first)
-
-= 1.3.3 =
-* Adds link to newsletter and provides choice to display drafts, scheduled posts, or both. Included option to give plugin author credit. Fixed incorrect image reference.
-
-= 1.3.2 =
-* Adds link to newsletter and provides choice to display drafts, scheduled posts, or both. Included option to give plugin author credit.
-
-= 1.3.1 =
-* Adds link to newsletter and provides choice to display drafts, scheduled posts, or both.
-
-= 1.3 =
-* Adds link to newsletter and provides choice to display drafts, scheduled posts, or both.
-
-= 1.2 =
-* Adds the ability to also send readers to your newsletter signup page to subscribe to future updates.
-
-= 1.1 =
-Initial version for other sites.
+= 1.0 =
+Stable public release
