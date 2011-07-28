@@ -3,7 +3,7 @@
 Plugin Name: Shortcodes to show or hide content
 Plugin URI: http://www.doitwithwp.com/
 Description: Set a date/time to show or hide specific parts of a post's content
-Version: 1.0.1
+Version: 1.0.2
 Author: Dave Clements
 Author URI: http://www.theukedge.com
 License: GPL2
@@ -51,9 +51,9 @@ function thewanderingbrit_showafter_shortcode($args = array(), $content = '') {
 		),
 		$args
 	));
-	if (strtotime($on) > time()) {
-		return '';
+	if (strtotime($on) < time()) {
+		return $content;
 	}
-	return $content;
+	return '';
 }
 add_shortcode('showafter', 'thewanderingbrit_showafter_shortcode');
