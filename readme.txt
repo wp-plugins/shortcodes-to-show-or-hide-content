@@ -111,14 +111,8 @@ New combined shortcode (`[time-restrict]`) and new shortcode for a repeating sho
 = 1.0.2 =
 Code revisions for more stability
 
-
-
 = 1.0.1 =
-
 Made function names more unique to avoid conflicts with other plugins
 
-
-
 = 1.0 =
-
 Stable public release
