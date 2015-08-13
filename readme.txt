@@ -4,7 +4,7 @@ Contributors: thewanderingbrit
 Donate link: https://www.theukedge.com/donate/?utm_source=wordpress.org&utm_medium=plugin&utm_campaign=donate
 Tags: time, date, show hide, expire, active, activate, competition, giveaway, advert, advertising, content, post, text, hidden, show, appear, hide, shortcode, restrict, repeat, daily, monthly, weekly, every, week, day, month, off, on, yearly, annually, annual, year
 Requires at least: 2.5
-Tested up to: 4.0
+Tested up to: 4.3
 Stable tag: 2.3
 License: GPLv2
 
@@ -135,20 +135,35 @@ The best thing to do is to submit an issue on [GitHub](https://github.com/theuke
 == Changelog ==
 
 = 2.3 =
+
+Release date: December 5, 2014
+
 * Introduced recurring annual schedule (previously only monthly/weekly/daily). Just use type="annually" in your shortcodes.
 * Code improvements.
 
 = 2.2 =
+
+Release date: October 9, 2014
+
 * Fixed inability to nest shortcodes by introducing distinct copies of the time-restrict-repeat shortcode (`[time-restrict-repeat-2]` and `[time-restrict-repeat-3]`)
 
 = 2.1.1 =
+
+Release date: October 2, 2014
+
 * Fixed error where content would show all the time when either onday and offday matched, or offdate and ondate matched.
 
 = 2.1 =
+
+Release date: August 30, 2014
+
 * Revised code to allow for onday and offday being the same. Same for ondate and offdate.
 * Changed attributes for `[time-restrict]` shortcode to be more in line with the rest of the plugin. Now using 'on' and 'off' instead of 'show' and 'hide', though the show and hide attributes will continue to work.
 
 = 2.0 =
+
+Release date: August 22, 2014
+
 * New combined `[time-restrict]` shortcode allows for hide and show times for the same piece of content
 * New `[time-restrict-repeat]` shortcode allows you to show and hide content on a daily, weekly or monthly recurring basis
 * Code improvements
